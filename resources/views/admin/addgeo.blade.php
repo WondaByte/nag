@@ -367,14 +367,7 @@
               <th scope="col">Action</th>
             </tr>
         </tfoot>
-
-        
-
-
-        
-    
-            
-                
+      
         <tbody>
             @foreach($data as $gdata)
           <tr>
@@ -413,11 +406,6 @@
         </tbody>
       
   </table>
-
-
-
-
-
 
 
             {{-- <div class="card">
@@ -624,8 +612,7 @@
                         $('#type').val(data[9]);
                         $('#ovisibility').val(data[10]);
                         $('#uavailable').val(data[11]);
-
-
+                        
                         $('#editForm').attr('action', '/employee/'+data[0]);
                         $('#editModal').modal('show');
 

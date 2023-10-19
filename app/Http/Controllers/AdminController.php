@@ -126,6 +126,23 @@ class AdminController extends Controller
         }
 
 
+        public function updateGeodata($id)
+    {
+            $data=Geodata::find($id);
+
+
+        return view('admin.update_Geodata',compact('data'));
+    }
+
+
+        public function showEditGeodataForm($id) {
+            // Your logic to retrieve data and pass it to the view
+            $data = Geodata::find($id);
+        
+            return view('your.view.name', ['id' => $id, 'data' => $data]);
+        }
+        
+
     // public function showappointment()
     // {
 
@@ -177,12 +194,5 @@ class AdminController extends Controller
     }
 
 
-    public function updateGeodata($id)
-    {
-            $data=Geodata::find($id);
-
-
-        return view('admin.update_Geodata',compact('data'));
-    }
-
+    
 }
